@@ -222,8 +222,8 @@ void graphicsBindingInit()
 	INIT_GRA_PROP_BIND( FrameRate,  "frame_rate"  );
 	INIT_GRA_PROP_BIND( FrameCount, "frame_count" );
 
-	if (rgssVer >= 2)
-	{
+	//if (rgssVer >= 2)
+	//{
 	_rb_define_module_function(module, "width", graphicsWidth);
 	_rb_define_module_function(module, "height", graphicsHeight);
 	_rb_define_module_function(module, "wait", graphicsWait);
@@ -233,12 +233,12 @@ void graphicsBindingInit()
 	_rb_define_module_function(module, "resize_screen", graphicsResizeScreen);
 
 	INIT_GRA_PROP_BIND( Brightness, "brightness" );
-	}
+	//}
 
-	if (rgssVer >= 3)
-	{
+	//if (rgssVer >= 3)
+	//{
 	_rb_define_module_function(module, "play_movie", graphicsPlayMovie);
-	}
+	//}
 
 	INIT_GRA_PROP_BIND( Fullscreen, "fullscreen"  );
 	INIT_GRA_PROP_BIND( ShowCursor, "show_cursor" );
